@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #f25454;
+    --background-color:#FAFAFA;
+}
+
+/* nav bar css  */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color:var(--main-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color:var(--main-color);
+}
+/*  home css */
+.home .slide-one {
+    background-image: url(../images/slideshow-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.home .slide-two {
+    background-image: url(../images/slideshow-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.home .slide-three {
+    background-image: url(../images/slideshow-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.home .carousel-control-prev{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 60px;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 45%;
+    left: -5px;
+    padding: 10px;
+}
+.home .carousel-control-next{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 60px;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 50%;
+    left: -5px;
+    padding: 10px;
+}
+
+.home .icon-box {
+    width: 30px;
+    height: 40px;
+    top:25%;
+    left :-5px;
+    background-color:#434343;
+    padding: 10px 0px 20px ;
+    border-radius: 5px;
+}
+.home .down-icon{
+    position: absolute;
+    padding: 30px 20px;
+    border-radius:20px;
+    width: 30px;
+    height: 30px;
+    top: 80%;
+    left: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.home .down-icon:hover{
+    border: 1px solid var(--main-color);
+}
+/* end home css */
+
+/* about css */
+
+.section-title h2{
+    font-size: 80px;
+    color: #f1f1f1;
+
+}
+.section-title h3{
+    font-size: 40px;
+}
+.title-content::after{
+
+    content: "";
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    transition: .5s width ease-in-out;
+} 
+.section-title:hover .title-content::after{
+    width: 5%;
+} 
+.progress-bar{
+
+    background-color: var(--main-color);
+}
+
+/* end about css */
+
+
+/* start team css */
+
+.image{
+    position: relative;
+    overflow: hidden;
+
+}
+ .image img{
+    position: relative;
+}
+.layer{
+    background-color: rgba(242, 100, 97, .7);
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top .35s ease-in-out;
+}
+
+.image:hover .layer{
+    top: 0%;
+
+}
+
+.team-content:hover h5{
+    color: var(--main-color);
+    
+}
+
+/* start team css */
+
+/* start info-box */
+.info-box{
+    margin: 50px auto;
+}
+/* end info-box */
+
+/* start services css */
+.services{
+    background-color: var(--background-color);
+}
+.services i{
+    color: var(--main-color);
+}
+.service-single:hover h3{
+    color: var(--main-color);
+}
+
+
+
+/* end services css  */
+
+ .testmional .indicator-item img {
+    width: 110px !important;
+    height: 110px !important;
+ }
+ .testmional .indicator-item img.active {
+    width: 140px !important;
+    height: 140px !important;
+ }
+ .testmional .client-info h3{
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+.client-info {
+    display: none;
+}
+.indicator-item img.active:first-of-type + div{
+   display: block;
+}
+/* start contact css */
+.contact{
+    background-color: var(--background-color);
+}
+.contact i{
+    color: var(--main-color);
+}
+.contact-content:hover h4{
+    color: var(--main-color);
+}
+.contact .field-name , .contact .field-email , .contact .field-phone,.contact .field-message{
+    border: 1px solid var(--main-color);
+}
+.contact .field-name:hover{
+    border: 1px solid var(--main-color);
+}
+
+
+/* end contact css */
+
+/* start footer css */
+footer{
+    background-color: #222222;
+    background-image: url(../images/dotted-map.png);
+    background-position: center;
+    background-size: cover;
+}
+footer .to-top{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding-top: 10px;
+    padding-left:10px;
+    padding-bottom: 10px;
+    width: 50px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+footer .brdr{
+    padding: 20px;
+    border: 1px solid var(--background-color);
+
+}
+footer .footer-copyright{
+    background-color: #1A1A1A;
+}
+footer a:hover, 
+footer i:hover{
+    color: var(--main-color) !important;
+} 
+/* end footer css */
